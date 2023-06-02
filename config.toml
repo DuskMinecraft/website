@@ -1,0 +1,46 @@
+baseURL = "http://duskmc.cn/"
+themesDir = "themes"
+theme = "winston"
+languageCode = 'zh-Hans-CN'
+title = 'Dusk Minecraft'
+copyright = 'duskmc.cn. 保留所有权利。'
+
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+paginate = 3
+
+[permalinks]
+  post = "/post/:slug"
+  
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
+
+[params]
+  google_analytics_id = ""
+  twitter_handle = ""
+  showAuthorOnHomepage = true
+  showAuthorOnPosts = false
+  showPostsOnHomepage = false
+  addFrame = true
+  addDot = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[taxonomies]
+  category = "categories"
+
+[mediaTypes]
+  [mediaTypes."application/x-php"]
+  suffixes = ["php"]
+
+[outputFormats]
+    [outputFormats.PHP]
+        mediaType = "application/x-php"
+        isHTML = true
+        baseName = "index"
